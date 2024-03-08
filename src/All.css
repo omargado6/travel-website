@@ -1,0 +1,467 @@
+body {
+  font-family: "Josefin Sans";
+  background-color: #36414e !important;
+  behavior: "smooth";
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* main */
+:root {
+  --main-color-title: #25af9a;
+  --main-back-color: #0c111f;
+  --second-back-title: #293d4c;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 5px !important;
+  height: 20px !important;
+  color: var(--main-color-title) !important;
+}
+
+/* cards  */
+.popular-cards,
+.whyus-cards,
+.stats-cards,
+.rooms-cards {
+  overflow: hidden;
+  border-radius: 30px !important;
+  border-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+.popular-cards:hover,
+.whyus-cards:hover,
+.stats-cards:hover,
+.Category-cards:hover,
+.rooms-cards:hover {
+  transform: scale(1.07);
+}
+/* title */
+.theTitle {
+  color: #25af9a;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+}
+/* navbar */
+.navbar-toggler {
+  background-color: #b9b9cbda !important;
+}
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar {
+  background-color: #36414efc;
+  color: #b9b9cb !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.navbar a {
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.1s ease 0s;
+}
+.navbar a:hover {
+  transform: scale(1.2);
+  /* font-weight: bold; */
+  color: var(--main-color-title) !important;
+}
+.logoNavbar {
+  border-radius: 50%;
+}
+/* Home page  */
+
+/* fly book */
+.flightSearch {
+  background-position: center;
+  height: calc(100vh - 60px);
+  background-image: url("./imgs/hero-banner.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.flightSearch .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 80%);
+}
+
+.flyBook {
+  display: flex;
+  justify-content: center;
+
+  transform: translate(0%, 10%);
+  border-radius: 250px;
+}
+.themainTitle {
+  padding-top: 70px;
+}
+
+@media (max-width: 991.98px) {
+  .themainTitle {
+    padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .flyBook {
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  /* .themainTitle h1{
+
+  } */
+  .themainTitle p {
+    display: none;
+  }
+}
+.themainTitle h1 {
+  font-weight: bold !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+.themainTitle h1 span {
+  color: #00ffd9;
+}
+.themainTitle p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* flight search */
+.tour-search {
+  padding-top: 30px;
+}
+
+.tour-search-form .input-field {
+  color: var(--main-color-title);
+  background: var(--main-back-color);
+  font-weight: 600;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+.tour-search-form label {
+  color: #00ffd9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.tour-search-form .input-field::placeholder {
+  color: var(--main-color-title);
+}
+
+.tour-search-form .input-field::-webkit-datetime-edit {
+  color: var(--main-color-title);
+  text-transform: uppercase;
+}
+
+.tour-search-form .input-wrapper {
+  margin-bottom: 15px;
+}
+.btnintrohotel {
+  background-color: var(--main-color-title) !important;
+  color: var(--main-back-color) !important;
+}
+
+.btnintro {
+  background-color: var(--main-back-color) !important;
+  color: #00ffd9 !important;
+}
+.btnintrohotel,
+.btnintro {
+  width: fit-content !important;
+  margin: 10px;
+  border-color: transparent !important;
+  transition: all 0.2s ease 0.1s;
+  border-radius: 30px !important;
+  width: 100%;
+}
+.btnintro:hover,
+.btnintrohotel:hover {
+  color: var(--main-back-color) !important;
+  background-color: var(--main-color-title) !important;
+  border-color: transparent;
+  font-weight: 800;
+}
+/* popular */
+.popular,
+.stats {
+  background-color: var(--main-back-color);
+}
+.popular-cards,
+.stats-cards,
+.rooms-cards {
+  background-color: var(--second-back-title) !important;
+  color: #a6a7b9 !important;
+  box-shadow: inset #558bb4c7 0px 0px 10px, #558bb4c7 0px 0px 7px;
+}
+.popular-title,
+.stats-title,
+.fontStats {
+  color: var(--main-color-title) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px;
+}
+.popular-img {
+  height: 170px;
+  border-radius: 25%;
+}
+.star span {
+  color: gold !important;
+}
+
+/* Category */
+.hotels,
+.whyus {
+  background-color: var(--second-back-title);
+}
+.Category-cards {
+  border-radius: 40px !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.imgCategory {
+  border-radius: 25px !important;
+  transition: all 0.6s ease 0s;
+}
+.imgCategory:hover,
+.rooms-img:hover {
+  transform: scale(1.22);
+}
+.Category-cards span {
+  color: var(--main-color-title);
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #0c111fe9;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: -22.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* choice the type of rooms */
+.typeroomli li {
+  cursor: pointer;
+  width: 75px;
+  margin: 0 10px;
+  font-weight: 500;
+  color: var(--main-color-title);
+  background-color: var(--main-back-color);
+  border-color: transparent;
+  border-radius: 25px;
+  transition: all 0.2s ease 0s;
+}
+.typeroomli li:hover,
+.typeroomli li:active {
+  color: var(--main-back-color);
+  background-color: var(--main-color-title);
+  border-color: transparent;
+  transform: scale(1.2);
+}
+.typeroomli li:active {
+  color: var(--main-color-title) !important;
+  background-color: var(--main-back-color) !important;
+  border-color: transparent !important;
+  transform: scale(1.2);
+}
+/* rooms */
+.rooms-cards {
+  background-color: var(--main-back-color) !important;
+}
+.rooms-title {
+  color: var(--main-color-title) !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin: 20px 0px;
+  padding-bottom: 20px;
+}
+
+.rooms-img {
+  height: 200px;
+  border-bottom-left-radius: 20% !important;
+  border-bottom-right-radius: 20% !important;
+  transition: all 0.3s ease 0s;
+}
+
+.room-price {
+  color: rgb(255, 215, 0);
+  font-weight: 700;
+}
+.rooms-feature {
+  font-size: 18px;
+}
+.li-feature {
+  display: inline-flex;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+/* why us */
+
+.whyus-cards {
+  background-color: var(--main-back-color) !important;
+  color: #a6a7b9 !important;
+  font-weight: 600;
+}
+.box-img {
+  overflow: hidden;
+}
+.whyus-img {
+  height: 230px;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+}
+.whyus-img:hover {
+  transform: scale(1.3);
+}
+.whyus-title {
+  color: var(--main-color-title) !important;
+  font-weight: 800 !important;
+}
+
+/* stats */
+
+.stats-cards {
+  border-radius: 20% !important;
+}
+.fontStats {
+  color: rgb(253, 215, 0) !important;
+}
+
+.fontStats {
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(0px);
+}
+.stats-cards:hover .fontStats {
+  transform: translateY(-10px);
+}
+
+/* footer */
+.footer {
+  overflow: hidden;
+}
+.logoFooter {
+  height: 125px;
+  width: 300px;
+  margin-top: -60px;
+  border-radius: 100%;
+}
+.infoAbout {
+  line-height: 1.7;
+  color: #a6a7b9;
+  font-weight: 500;
+}
+.socialFooter {
+  padding-top: 5px;
+  color: #a6a7b9;
+}
+
+.aboutFooter .socialFooter .facebook-icon:hover {
+  color: rgb(30, 112, 254);
+}
+
+.aboutFooter .socialFooter .insta-icon:hover {
+  color: rgb(255, 0, 76);
+}
+.aboutFooter .socialFooter .whatsapp-icon:hover {
+  color: rgb(0, 170, 0);
+}
+.aboutFooter .socialFooter .insta-icon,
+.aboutFooter .socialFooter .facebook-icon,
+.aboutFooter .socialFooter .whatsapp-icon {
+  width: 25px !important;
+  height: 25px !important;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+}
+
+.aboutFooter .socialFooter .insta-icon:hover,
+.aboutFooter .socialFooter .facebook-icon:hover,
+.aboutFooter .socialFooter .whatsapp-icon:hover {
+  transform: scale(1.6);
+}
+/* links */
+.titlefooter3 {
+  text-align: center;
+  color: var(--main-color-title);
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 15px;
+}
+ul li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #a6a7b9;
+  transform: scale(1);
+  transition: all 0.1s ease 0s;
+}
+ul li:hover a {
+  font-weight: bold;
+  transform: scale(1.4);
+  color: var(--main-color-title);
+}
+ul li:hover {
+  background-color: #0e2536;
+}
+
+/* contact */
+.add-contact {
+  color: #a6a7b9;
+  height: 20px;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+}
+.infoContact {
+  color: #a6a7b9;
+  font-weight: 600;
+}
+.add-contact:hover {
+  transform: scale(1.4);
+  color: var(--main-color-title);
+}
+
+/* copyright */
+.copyFooter {
+  color: #a6a7b9;
+}
+.copyFooter {
+  border-top: 1px solid #b9b9cb;
+}
+.copyFooter span {
+  color: var(--main-color-title);
+  font-weight: bold;
+}
+
+/* << the End Of Page >> */
