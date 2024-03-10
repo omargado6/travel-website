@@ -1,4 +1,4 @@
-# SSzonoe task1 landing page 
+# Travel website 
 ### Responsive Website Using HTML, CSS, Bootstrap, and ReactJs.
 
 ## [travel-website](https://travelderibit.netlify.app)
